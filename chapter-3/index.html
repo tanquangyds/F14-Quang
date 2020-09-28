@@ -7,18 +7,21 @@
     and internationally renowned, thought-provoking speakers who inform, educate, and entertain our audience!">
     <meta name="keywords" content="Ticket Package, San Joaquin Valley Town Hall">
     <title>San Joaquin Valley Town Hall</title>
-    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="main.css">
 </head>
 <body>
     <!-- header -->
     <header>
-        <img src="./img/town_hall_logo.gif" alt="Logo San Joaquin Valley" width="80px">
-        <h1>San Joaquin Valley Town Hall</h1>
-        <!-- <p id="shadow" style="text-shadow: 1px 1px 4px red">75</p> -->
-        <p id="shadow" >75</p>
-        <h3>
-            Celebrating our
-        </h3>
+        <img class="logo-img" src="./img/town_hall_logo.gif" alt="Logo San Joaquin Valley">
+        <div>
+            <h1>San Joaquin Valley Town Hall</h1>
+            <h3>
+                Celebrating our
+                <span class="text-shadow">75 <sup>th</sup></span>
+                Year
+            </h3>
+        </div>
+        
     </header>
     <!-- main -->
     <main>
@@ -30,44 +33,38 @@
         </article>
 
         <article class="ticket">
-            <h3>Our Ticket Package</h3>
+            <h3>Our Ticket Packages</h3>
             <ul>
                 <li>Season Package: $95</li>
                 <li>Patron Package: $200</li>
                 <li>Single Package: $25</li>
             </ul>
         </article>
-        <!-- guest -->
+        <!-- nar -->
         <nav class="guest-speakers">
-            <h2>This season's guest speakers</h2>
-            <ul class="guest-profile">
-                <li class="guest-info">
-                    <p>October</p>
-                    <div>
-                        <a href="#">Jeffery Toobin</a> <br>
-                        <img src="./img/Jeffery_Toobin.jpg" alt="Jeffery Toobin" width="80px">
-                    </div>
+            <h2 class="guest-speakers-title">This season's guest speakers</h2>
+            <ul class="guest-speakers-list">
+                <li class="guest-profile">
+                    October
+                    <a class="guest-profile-link" href="#">Jeffery Toobin</a>
+                    <img class="guest-profile-img" src="./img/Jeffery_Toobin.jpg" alt="Jeffery Toobin" width="75px">
                 </li>
-                <li class="guest-info">
-                    <p>November</p>
-                    <div>
-                        <a href="#">Andrew Ross Sorkin</a> <br>
-                        <img src="./img/andrew-ross-sorkin.jpg" alt="Andrew Ross Sorkin" width="80px">
-                    </div>
+                <li class="guest-profile">
+                    November
+                    <a class="guest-profile-link" href="#">Andrew Ross Sorkin</a>
+                    <img class="guest-profile-img" src="./img/Andrew_Ross_Sorkin.jpg" alt="Andrew Ross Sorkin" width="75px">
                 </li>
-                <li class="guest-info">
-                    <p>January</p>
-                    <div>
-                        <a href="#">Amy Chua</a> <br>
-                        <img src="./img/amy_chua.jpg" alt="Amy Chua" width="80px">
-                    </div>
-                </li>                
-            </ul>         
+                <li class="guest-profile">
+                    January                    
+                    <a class="guest-profile-link" href="#">Amy Chua</a>
+                    <img class="guest-profile-img" src="./img/amy_chua.jpg" alt="Ảnh Jeffery Toobin" width="75px">                    
+                </li>
+            </ul>
         </nav>
     </main>
     <!-- footer -->
     <footer>
-        <p>&copy; 2015, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+        <p class="copyright">&copy; 2015, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
     </footer>
 </body>
 </html>
