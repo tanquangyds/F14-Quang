@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        .left {
+            width: 0px;
+            height: 0px;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-left: 10px solid red;
+        }
+        .right {
+            width: 0px;
+            height: 0px;
+            border-top: 10px solid transparent;
+            border-bottom: 10px solid transparent;
+            border-right: 10px solid red;
+        }
+        .top {
+            width: 0px;
+            height: 0px;
+            border-right: 10px solid transparent;
+            border-bottom: 10px solid red;
+            border-left: 10px solid transparent;
+        }
+        .bottom {
+            width: 0px;
+            height: 0px;
+            border-top: 10px solid red;
+            border-right: 10px solid transparent;
+            border-left: 10px solid transparent;
+        }
+        
+        /* Cách 2:L tạo 1 arrow sau đó sử dụng transform: rotate(...deg)  */
+    </style>
+</head>
+<body>
+    <ul class="container">
+        <li class="arrow"> Arrow-Left
+            <div class="left"></div>
+        </li>
+        <li class="arrow"> Arrow-Right
+            <div class="right"></div>
+        </li>
+        <li class="arrow"> Arrow-Top
+            <div class="top"></div>
+        </li>
+        <li class="arrow"> Arrow-Bottom
+            <div class="bottom"></div>
+        </li>
+    </ul>
+</body>
+</html>

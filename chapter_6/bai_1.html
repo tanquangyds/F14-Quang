@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 1200px;
+            height: 500px;
+            background-color: #999;
+            margin: 0 auto;            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .content {
+            width: 500px;
+            height: 100px;
+            background-color: yellow;
+            text-align: center;
+            font-size: 50px;
+            color: red;
+            /* margin: auto; */
+            /* position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="content">
+            Child Box
+        </div>
+    </div>
+    <!-- Ngoài ra có thể canh giữa div.content trong div.container bằng các cách sau:
+    C2: sử dụng margin auto
+        .container {
+            display: flex;
+        }
+        .content {
+            margin: auto;
+        }
+    C3: Sử dụng position kết hợp transform
+        .container {
+            position: relative;
+        }
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    -->
+</body>
+</html>
