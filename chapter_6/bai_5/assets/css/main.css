@@ -1,0 +1,160 @@
+/* the styles for the elements */
+*,
+*::before,
+*::after{box-sizing:border-box;}
+
+html {
+    background-color: #fff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 800px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+
+h1, h2, h3, h4, h5, h6, p , ul, li {margin:0; padding: 0;}
+
+/* header */
+
+header {    
+    display: flex;
+    padding: 1.5rem 0;
+    border-bottom: 3px solid #931420;
+    background-image: linear-gradient(30deg, #f6bb73 0%, white 40%, white 60% , #f6bb73 100%);
+}
+
+.logo-img {
+    width: 80px;
+    margin: 0 30px;
+}
+
+header h1 {
+    color: #800000;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+header h4 {
+    font-style: italic;
+    margin: 0;
+}
+.text-shadow {
+    text-shadow: 1px 2px 1px #800000;
+}
+
+/* the styles for the main */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+main h3 {
+    color: #800000;
+    margin-bottom: 0.5rem;
+}
+
+
+/* nav */
+
+.guest-speakers {
+    width: 215px;
+    padding: 20px 0;
+}
+
+.guest-speakers-list {
+    padding-left:0;
+}
+
+.guest-profile {
+    list-style: none;
+    font-weight: bold;
+}
+
+.guest-profile-link {
+    display: block;
+    font-weight: bold;
+}
+
+.guest-profile-img {
+    margin: 0.5em 0;
+}
+
+/* Section */
+
+.guest-content {
+    width: 524px;
+    padding: 20px 0;
+}
+
+.guest-content h4,
+.guest-content p {
+    margin-bottom: 0.5rem;
+}
+
+.mission__content {
+    margin-bottom: 0.5rem;
+}
+
+.mission {
+    margin-bottom: 0.5rem;
+}
+
+.main-content {
+    margin-bottom: 0.5rem;
+}
+
+.main-content__title {
+    margin-bottom: 0.5rem;
+}
+
+.main-content__wrap {
+    padding: 0.5rem 0;
+    border-top: 3px solid #800000;
+    border-bottom: 3px solid #800000;
+}
+
+.main-content__wrap-description {
+    display: flex;
+}
+
+.description-content__inform {
+    font-weight: bold;
+}
+
+.description-content__link {
+    font-weight: normal;
+}
+
+.ticket ul {
+    margin: 0;
+    padding-left: 1.25em;
+}
+
+.ticket ul li {
+    margin-bottom: 0.5rem;
+}
+
+.quote {
+    font-style: italic;
+    justify-content: center;
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+
+/* the styles for the footer */
+
+footer {
+    background-color: #931420;
+}
+
+.copyright {
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
