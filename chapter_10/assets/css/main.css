@@ -1,34 +1,47 @@
 /* the styles for the elements */
 *,
 *::before,
-*::after{box-sizing:border-box;}
+*::after {
+  box-sizing: border-box;
+}
 
 html {
-    background-color: #fff;
+  background-color: #fff;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    max-width: 800px;
-    width: 100%;
-    margin: 0 auto;
-    border: 3px solid #931420;
-    background-color: #fffded;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  border: 3px solid #931420;
+  background-color: #fffded;
 }
 
-h1, h2, h3, h4, h5, h6, p , ul, li {margin:0; padding: 0;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
 
 /* header */
 
 .container {
-    display: grid;
-    width: 100%;
-    height: fit-content;
-    margin: 0 auto;
-    grid-template-columns: 1fr 3fr;
-    grid-template-rows: 130px auto auto auto 50px;
-    grid-template-areas: 
+  display: grid;
+  width: 100%;
+  height: fit-content;
+  margin: 0 auto;
+  grid-template-columns: 1fr 3fr;
+  grid-template-rows: 130px auto auto auto 50px;
+  grid-template-areas:
     "head head"
     "nav art1"
     "nav art2"
@@ -36,147 +49,161 @@ h1, h2, h3, h4, h5, h6, p , ul, li {margin:0; padding: 0;}
     "foot foot";
 }
 
-header { grid-area: head;}
-.guest-speakers { grid-area: nav;}
-.mission { grid-area: art1;}
-.main-content { grid-area: art2;}
-.ticket { grid-area: art3;}
-footer { grid-area: foot;}
+header {
+  grid-area: head;
+}
+.guest-speakers {
+  grid-area: nav;
+}
+.mission {
+  grid-area: art1;
+}
+.main-content {
+  grid-area: art2;
+}
+.ticket {
+  grid-area: art3;
+}
+footer {
+  grid-area: foot;
+}
 
-
-header {    
-    display: flex;
-    align-items: center;
-    padding: 1.5rem 0;
-    border-bottom: 3px solid #931420;
-    background-image: linear-gradient(30deg, #f6bb73 0%, white 40%, white 60% , #f6bb73 100%);
+header {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 3px solid #931420;
+  background-image: linear-gradient(
+    30deg,
+    #f6bb73 0%,
+    white 40%,
+    white 60%,
+    #f6bb73 100%
+  );
 }
 
 .logo-img {
-    width: 80px;
-    margin: 0 30px;
+  width: 80px;
+  margin: 0 30px;
 }
 
 header h1 {
-    color: #800000;
-    margin: 0;
-    font-size: 1.8rem;
+  color: #800000;
+  margin: 0;
+  font-size: 1.8rem;
 }
 
 header h4 {
-    font-style: italic;
-    margin: 0;
+  font-style: italic;
+  margin: 0;
 }
 .text-shadow {
-    text-shadow: 1px 2px 1px #800000;
+  text-shadow: 1px 2px 1px #800000;
 }
 
 /* the styles for the main */
 .container h3 {
-    color: #800000;
-    margin-bottom: 0.5rem;
+  color: #800000;
+  margin-bottom: 0.5rem;
 }
-
 
 /* nav */
 
 .guest-speakers {
-    padding: 1rem;
+  padding: 1rem;
 }
 
 .guest-speakers-list {
-    padding-left:0;
+  padding-left: 0;
 }
 
 .guest-profile {
-    list-style: none;
-    font-weight: bold;
+  list-style: none;
+  font-weight: bold;
 }
 
 .guest-profile-link {
-    display: block;
-    font-weight: bold;
+  display: block;
+  font-weight: bold;
 }
 
 .guest-profile-img {
-    margin: 0.5em 0;
+  margin: 0.5em 0;
 }
 
 /* Section */
 
 .guest-content {
-    width: 524px;
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .guest-content h4,
 .guest-content p {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mission__content {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .mission {
-    padding: 1rem 1rem 0 0;
+  padding: 1rem 1rem 0 0;
 }
 
 .main-content {
-    padding: 1rem 1rem 0 0;
+  padding: 1rem 1rem 0 0;
 }
 
 .main-content__title {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .main-content__wrap {
-    padding: 0.5rem 0;
-    border-top: 3px solid #800000;
-    border-bottom: 3px solid #800000;
+  padding: 0.5rem 0;
+  border-top: 3px solid #800000;
+  border-bottom: 3px solid #800000;
 }
 
 .main-content__wrap-description {
-    display: flex;
+  display: flex;
 }
 
 .description-content__inform {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .description-content__link {
-    font-weight: normal;
+  font-weight: normal;
 }
 
 .ticket {
-    padding: 1rem 1rem 1rem 0;
+  padding: 1rem 1rem 1rem 0;
 }
 
 .ticket ul {
-    margin: 0;
-    padding-left: 1.25em;
+  margin: 0;
+  padding-left: 1.25em;
 }
 
 .ticket ul li {
-    margin-bottom: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .quote {
-    font-style: italic;
-    justify-content: center;
-    padding-left: 2em;
-    padding-right: 2em;
+  font-style: italic;
+  justify-content: center;
+  padding-left: 2em;
+  padding-right: 2em;
 }
-
 
 /* the styles for the footer */
 
 footer {
-    background-color: #931420;
+  background-color: #931420;
 }
 
 .copyright {
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
 }
