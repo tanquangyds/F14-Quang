@@ -322,7 +322,8 @@
 }
 
 .showcase__description {
-  width: 500px;
+  width: 100%;
+  flex: 1;
 }
 
 .description__title {
@@ -352,7 +353,8 @@
 }
 
 .showcase__image {
-  width: 500px;
+  width: 100%;
+  flex: 1;
 }
 
 .showcase__img-1 {

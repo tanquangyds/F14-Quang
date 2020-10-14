@@ -15,12 +15,12 @@
   .showcase__detail {
     flex-direction: column;
   }
-  .showcase__description {
+  /* .showcase__description {
     width: 100%;
-  }
+  } */
 
   .showcase__image {
-    width: 100%;
+    /* width: 100%; */
     padding-top: 20px;
   }
 }
