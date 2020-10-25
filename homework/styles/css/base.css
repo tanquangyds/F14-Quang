@@ -10,10 +10,10 @@
 }
 
 html {
-  font-size: 62.5% !important;
-  line-height: 1.6rem !important;
-  font-family: "Roboto", sans-serif !important;
-  box-sizing: border-box !important;
+  font-size: 62.5%;
+  line-height: 1.6rem;
+  font-family: "Roboto", sans-serif;
+  box-sizing: border-box;
 }
 
 /* animation */
@@ -35,6 +35,19 @@ html {
   }
 }
 
+.flex {
+  display: flex;
+}
+
+.just-center {
+  justify-content: center;
+}
+.just-space-between {
+  justify-content: space-between;
+}
+.align-item-center {
+  align-items: center;
+}
 /* Button Style */
 .btn {
   min-width: 120px;

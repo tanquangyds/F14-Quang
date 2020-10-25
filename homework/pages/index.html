@@ -7,9 +7,9 @@
 
     
     <!-- Custom css -->
+    <link rel="stylesheet" href="../styles/css/grid.css">
     <link rel="stylesheet" href="../styles/css/base.css">
     <link rel="stylesheet" href="../styles/css/main.css">
-    <link rel="stylesheet" href="../styles/css/grid.css">
     <link rel="stylesheet" href="../styles/css/nomalize.css">
     <link rel="stylesheet" href="../styles/css/reset.local.css">
     <link rel="stylesheet" href="../styles/css/responsive.css">
@@ -18,7 +18,7 @@
 
 
     <!-- Bootstrap CSS and js -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/css/carousel.css">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -31,53 +31,103 @@
   </head>
   <body>
     <div class="app">
-      <div class="grid wide">
+        <div id="top-element"></div>
         <header class="header">
-          <div class="logo">
-            <a href="" class="logo__link">
-              <img src="../assets/img/logo-sungmohinh.png" alt="" class="logo__img">
-            </a>
-          </div>
-          <ul class="nav__left">
-            <li class="nav__item update">
-              <a href="" class="nav__item-link">
-                Nâng cấp
-                <i class="fas fa-chevron-down"></i>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__item-link">Sơn ngụy trang</a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__item-link">
-                Trang phục
-                <i class="fas fa-chevron-down"></i>
-              </a>
-            </li>
-            <li class="nav__item">
-              <a href="" class="nav__item-link">gel</a>
-            </li>
-          </ul>
-          <ul class="nav__right">
-            <li class="nav__item search">
-              <a href="" class="nav__item-link">
-                <i class="fas fa-search"></i>
-              </a>
-            </li>
-            <li class="nav__item login">
-              <a href="" class="nav__item-link">
-                Đăng nhập/ Đăng ký
-              </a>
+          <div class="grid wide">
+            <div class="row align-item-center">
+              <div class="logo">
+                <a href="" class="logo__link">
+                  <img src="../assets/img/logo-sungmohinh.png" alt="" class="logo__img">
+                </a>
+              </div>
+              <ul class="nav__left">
+                <li class="nav__item drop-down">
+                  <a href="" class="nav__item-link">
+                    Nâng cấp
+                    <i class="fas fa-chevron-down"></i>
+                  </a>
+                  <div class="nav__dropdown">
+                    <ul class="out__list">
+                      <h4 class="title-list">Phụ kiện gắn ngoài</h4>
+                      <li class="list__cate">
+                        <a href="" class="list__cate-link">REDDOT/Holo/laze</a>
+                      </li>
+                      <li class="list__cate">
+                        <a href="" class="list__cate-link">Băng đạn (MAG)</a>
+                      </li>
+                      <li class="list__cate">
+                        <a href="" class="list__cate-link">Stock/tube/grip</a>
+                      </li>
+                      <li class="list__cate">
+                        <a href="" class="list__cate-link">Body</a>
+                      </li>
+                    </ul>
+                    <ul class="out__list">
+                      <h4 class="title-list">Phụ kiện gắn trong</h4>
+                      <li class="list__cate">
+                        <a href="" class="list__cate-link">GEARBOX</a>
+                      </li>
+                      <li class="list__cate">
+                        <a href="" class="list__cate-link">Hop up</a>
+                      </li>
+                      <li class="list__cate">
+                        <a href="" class="list__cate-link">Pin/Sạc</a>
+                      </li>
+                      <li class="list__cate">
+                        <a href="" class="list__cate-link">Khác</a>
+                      </li>
+                    </ul>
+                    <ul class="out__list">
+                      <h4 class="title-list">Phụ kiện khác</h4>
+                    </ul>
+                  </div>
+                </li>
+                <li class="nav__item">
+                  <a href="" class="nav__item-link">Sơn ngụy trang</a>
+                </li>
+                <li class="nav__item drop-down">
+                  <a href="" class="nav__item-link">
+                    Trang phục
+                    <i class="fas fa-chevron-down"></i>
+                  </a>
+                  <ul class="skin-list">
+                    <li class="skin-item">
+                      <a href="" class="skin-item-link">Mặt nạ</a>
+                    </li>
+                    <li class="skin-item">
+                      <a href="" class="skin-item-link">Giáp</a>
+                    </li>
+                    <li class="skin-item">
+                      <a href="" class="skin-item-link">Khác</a>
+                    </li>
+                  </li>
+                </li>
+              </ul>
+              <li class="nav__item">
+                <a href="" class="nav__item-link">gel</a>
               </li>
-            <li class="nav__item cart">
-              <a href="" class="nav__item-link">
-                Giỏ hàng/ đ<span class="price">0</span>
-                <i class="fas fa-shopping-bag"></i>
-              </a>
-            </li>
-          </ul>
+              <ul class="nav__right">
+                <li class="nav__item search">
+                  <a href="" class="nav__item-link">
+                    <i class="fas fa-search"></i>
+                  </a>
+                </li>
+                <li class="nav__item login">
+                  <a href="" class="nav__item-link">
+                    Đăng nhập/ Đăng ký
+                  </a>
+                  </li>
+                <li class="nav__item cart">
+                  <a href="" class="nav__item-link">
+                    Giỏ hàng/ đ<span class="price">0</span>
+                    <i class="fas fa-shopping-bag"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </header>
-        <main class="container">
+        <main class="container grid wide mg--top">
           <!-- độ ngoài -->
           <div class="product">
             <p class="product__title">Độ ngoài</p>
@@ -557,40 +607,64 @@
             </div>
           </div>
         </main>
-        <footer>
-          <div class="footer__left">
-            <ul class="nav__secondary">
-              <li class="nav__secondary-item">
-                <a href="" class="nav__secondary-item-link">Gian hàng</a>
-              </li><li class="nav__secondary-item">
-                <a href="" class="nav__secondary-item-link">About</a>
-              </li>
-              <li class="nav__secondary-item">
-                <a href="" class="nav__secondary-item-link">Tin tức</a>
-              </li>
-              <li class="nav__secondary-item">
-                <a href="" class="nav__secondary-item-link">Youtube</a>
-              </li>
-              <li class="nav__secondary-item">
-                <a href="" class="nav__secondary-item-link">FAQ</a>
-              </li>
-              <li class="nav__secondary-item">
-                <a href="" class="nav__secondary-item-link">Contact</a>
-              </li>
-            </ul>
-            <p class="copyright">Copyright 2020 	&copy; SMH</p>
-          </div>
-          <div class="footer__right">
-            <ul class="payment">
-              <li class="payment__list">
-                <img src="" alt="">
-              </li>
-            </ul>
+        <footer class="footer">
+          <div class="grid wide">
+            <div class="row just-space-between align-item-center">
+              <div class="footer__left">
+                <ul class="nav__secondary">
+                  <li class="nav__secondary-item">
+                    <a href="" class="nav__secondary-item-link">Gian hàng</a>
+                  </li><li class="nav__secondary-item">
+                    <a href="" class="nav__secondary-item-link">About</a>
+                  </li>
+                  <li class="nav__secondary-item">
+                    <a href="" class="nav__secondary-item-link">Tin tức</a>
+                  </li>
+                  <li class="nav__secondary-item">
+                    <a href="" class="nav__secondary-item-link">Youtube</a>
+                  </li>
+                  <li class="nav__secondary-item">
+                    <a href="" class="nav__secondary-item-link">FAQ</a>
+                  </li>
+                  <li class="nav__secondary-item">
+                    <a href="" class="nav__secondary-item-link">Contact</a>
+                  </li>
+                </ul>
+                <p class="copyright">Copyright 2020 	&copy; SMH</p>
+              </div>
+              <div class="footer__right">
+                <ul class="payment">
+                  <li class="payment__list">
+                    <a href="" class="payment__link">
+                      <i class="fab fa-cc-visa"></i>
+                    </a>
+                  </li>
+                  <li class="payment__list">
+                    <a href="" class="payment__link">
+                      <i class="fab fa-cc-paypal"></i>
+                    </a>
+                  </li>
+                  <li class="payment__list">
+                    <a href="" class="payment__link">
+                      <i class="fab fa-cc-stripe"></i>
+                    </a>
+                  </li>
+                  <li class="payment__list">
+                    <a href="" class="payment__link">
+                      <i class="fab fa-cc-mastercard"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
           </div>
         </footer>
       </div>
+    <div class="arrow">
+      <a href="#top-element" class="arrow__link">
+        <i class="fas fa-chevron-up"></i>
+      </a>
     </div>
-    <div class="arrow"></div>
     <script>
       $('.carousel').carousel()
     </script>
